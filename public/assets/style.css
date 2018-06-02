@@ -1,0 +1,15 @@
+.carousel-item {
+	width: auto;
+	height: 625px;
+	max-height: 625px;
+}
+
+.carousel-caption {
+	color: white;
+	background-color: black;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
