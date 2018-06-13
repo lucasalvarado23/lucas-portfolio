@@ -109,6 +109,14 @@
       <p>Manage your crypto mining all in one page</p>
     </div>
   </div>
+  <div class="carousel-item">
+      <a href="https://graphsvid.com/" target="_blank">
+      <img class="d-block w-100" src="assets/pics/graphs.jpeg" alt="Third slide"> </a>
+      <div class="carousel-caption">
+      <h5>Important sutff</h5>
+      <p>Watch videos online and just press esc to exit</p>
+    </div>
+  </div>
   </div>
     <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -131,19 +139,6 @@
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (786) 285-6476</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: lucasalvarado23@gmail.com</p>
     </div><br>
-    <p>Lets get in touch. Send me a message:</p>
-
-   <form action="mailto:lucasalvarado23@gmail.com" method="post" enctype="text/plain">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
   <!-- End Contact Section -->
   </div>
 
@@ -170,13 +165,27 @@
 <!-- END PAGE CONTENT -->
 </div>
 <script>
-  function initMap(){
+ /* function initMap(){
     var location = {lat: 25.790654, lng: -80.130045};
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 10,
       center: location
     });
-  }
+  } */
+  function initMap() {
+  var myLatLng = {lat: 25.790654, lng: -80.130045};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{key}}&callback=initMap"
